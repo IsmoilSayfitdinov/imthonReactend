@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Fuggles&family=Inspiration&family=Poppins:ital,wght@0,400;0,500;0,600;0,800;1,700&family=Roboto:wght@300&display=swap');
+.main__saidbar {
+	max-width: 310px;
+	width: 100%;
+	max-height: 3900px;
+	min-height: 100%;
+	height: 100%;
+}
+
+.Saidbar {
+	width: 100%;
+	background-color: #000;
+	height: 100%;	
+	padding-bottom: 20px;
+	min-height: 2700px;
+}
+
+.IconsViwe {
+	padding-left: 30px;
+	padding-top: 30px;
+}
+
+.IconsViwe {
+	color: #fff;
+	padding-bottom: 40px;
+	border-bottom: 1px solid rgba(128, 128, 128, 0.52);
+	a {
+		color: #fff;
+		text-decoration: none;
+		align-items: center;
+		display: flex;
+		gap: 20px;
+	}
+	.iconsS {
+		font-size: 28px;
+	}
+	.SaidbarName {
+		display: flex;
+		align-items: center;
+		gap: 20px;
+		list-style: none;
+		margin-top: 29px;
+		p {
+			font-size: 18px;
+		}
+	}
+}
+
+.iconsViewTitle {
+	padding-top: 20px;
+	padding-left: 20px;
+	.textView {
+		margin-top: 20px;
+		.nameTitle {
+			color: #b3b3b3;
+			font-family: 'Roboto' , sans-serif;
+			font-size: 15px;
+			font-style: normal;
+			font-weight: 450;
+			line-height: normal;
+            opacity: 0.8;
+		}
+	}
+}

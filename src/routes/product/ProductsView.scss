@@ -1,0 +1,133 @@
+.main_products {
+	max-width: 1986px;
+	height: 100%;
+	display: flex;
+}
+
+.mainsPr {
+	width: 100%;
+	background: linear-gradient(180deg, #def628 1.09%, #121212 7.28%);
+	display: flex;
+	height: 100%;
+}
+
+.products_music {
+	.musicsview {
+		.imgAndTExt {
+			display: flex;
+			margin-left: 41px;
+			margin-top: 38px;
+			align-items: center;
+			img {
+				width: 40%;
+			}
+			.textView {
+				margin-left: 32px;
+				p {
+					color: #fff;
+					font-family: 'Roboto', sans-serif;
+					font-size: 16px;
+					font-style: normal;
+					font-weight: 500;
+					line-height: normal;
+					letter-spacing: -0.32px;
+				}
+				h1 {
+					margin-top: 12px;
+					margin-bottom: 12px;
+					color: #fff;
+					font-family: 'Roboto', sans-serif;
+					font-size: 92px;
+					font-style: normal;
+					font-weight: 900;
+					line-height: normal;
+					letter-spacing: -7.32px;
+				}
+				span {
+					color: #fff;
+					font-family: 'Roboto', sans-serif;
+					font-size: 20px;
+					font-style: normal;
+					font-weight: 450;
+					line-height: normal;
+				}
+			}
+		}
+	}
+}
+
+.PlayListCard {
+	width: 100%;
+}
+
+.CardPlay {
+	width: 100%;
+}
+
+.TrackItmes {
+	color: #fff;
+	display: flex;
+	width: 80%;
+    cursor: pointer;
+
+}
+
+.imgTextTracks {
+	margin-top: 32px;
+	display: flex;
+	width: 100%;
+	margin-left: 106px;
+	img {
+		width: 12%;
+		margin-right: 21px;
+	}
+	.imgTetxTrak {
+		p {
+			color: #65d36e;
+			font-family:'Roboto', sans-serif;
+			font-size: 20px;
+			font-style: normal;
+			font-weight: 450;
+			line-height: normal;
+			letter-spacing: 0.2px;
+		}
+		span {
+			color: #b3b3b3;
+			font-family: 'Roboto', sans-serif;
+			font-size: 18px;
+			font-style: normal;
+			font-weight: 450;
+			line-height: normal;
+		}
+	}
+}
+
+.AlbumsTrack {
+	width: 100%;
+	margin-top: 46px;
+	p {
+        width: 80%;
+		color: #b3b3b3;
+		font-family: 'Roboto', sans-serif;
+		font-size: 18px;
+        opacity: 0.6;
+		font-style: normal;
+		font-weight: 450;
+		line-height: normal;
+	}
+}
+
+
+.AddesDate{
+    margin-top: 46px;
+     .active{
+        color: #fff;
+        font-size: 23px;
+     }
+
+     .notActive{
+        color: #65d36e;
+        font-size: 23px;
+
+     }
+}
