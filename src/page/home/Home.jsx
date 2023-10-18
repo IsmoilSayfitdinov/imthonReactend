@@ -4,6 +4,8 @@ import Aside from '../../components/Aside/Aside'
 import './Home.scss'
 import  {Link} from 'react-router-dom'
 import  {useDispatch} from 'react-redux'
+import {AiOutlineLoading} from "react-icons/ai"
+import { FiChevronLeft, FiChevronRight } from 'react-icons/fi'
 
 const Home = () => {
 	const [dataSpotidyf0 , Setdata0] = useState([])
@@ -14,7 +16,7 @@ const Home = () => {
 	const [dataSpotify5, SetData5] = useState([])
 	const dispatch = useDispatch()	
 	const TOKEN = localStorage.getItem('token')
-
+    const [logid , setLogid] = useState(false)
 
 
 	useEffect(() => {
@@ -30,6 +32,7 @@ const Home = () => {
 			)
 			const data = await response.json()
 			data.playlists.items.length = 6
+			setLogid(true)
 			Setdata0(data.playlists.items)
 		}
 
@@ -49,6 +52,7 @@ const Home = () => {
 			)
 			const data = await response.json()
 			data.playlists.items.length = 6
+			setLogid(true)
 			SetData(data.playlists.items)
 		}
 
@@ -68,6 +72,7 @@ const Home = () => {
 			)
 			const data = await response.json()
 			data.playlists.items.length = 6
+			setLogid(true)
 			SetData2(data.playlists.items)
 		}
 		fetchData2()
@@ -85,6 +90,7 @@ const Home = () => {
 			)
 			const data = await response.json()
 			data.playlists.items.length = 6
+			setLogid(true)
 			SetData3(data.playlists.items)
 		}
 		fetchData3()
@@ -102,6 +108,7 @@ const Home = () => {
 			)
 			const data = await response.json()
 			data.playlists.items.length = 6
+			setLogid(true)
 			SetData4(data.playlists.items)
 		}
 		fetchData4()
@@ -119,6 +126,7 @@ const Home = () => {
 			)
 			const data = await response.json()
 			data.playlists.items.length = 6
+			setLogid(true)
 			SetData5(data.playlists.items)
 		}
 		fetchData5()
@@ -131,23 +139,33 @@ const Home = () => {
 	}
 
 
-	return (
+	return logid === true ? (
 		<>
 			<div className='mainDisplay'>
 				<Saidbar />
 				<div className='main_home'>
 					<div className='Home'>
+						<div className='Nexts'>
+							<div className='divsNex'><FiChevronLeft/></div>
+							<div className='divsNex'><FiChevronRight/></div>
+						</div>
 						<div className='textHome'>
 							<h1>Good afternoon</h1>
 						</div>
 						<div className='HomeProducts'>
-							{dataSpotidyf0?.map(items => (
-								<div className='HomeProduct' key={items.id}>
-									<div className='imgText'>
-										<img src={items.images[0].url} alt='' />
-										<p>{items.name}</p>
+							{dataSpotidyf0?.map(item => (
+								<Link
+									to='/products'
+									onClick={() => setProducts(item)}
+									key={item.id}
+								>
+									<div className='HomeProduct' key={item.id}>
+										<div className='imgText'>
+											<img src={item.images[0].url} alt='' />
+											<p>{item.name}</p>
+										</div>
 									</div>
-								</div>
+								</Link>
 							))}
 						</div>
 						<div className='cardProductsFetch'>
@@ -280,6 +298,18 @@ const Home = () => {
 					</div>
 				</div>
 				<Aside />
+			</div>
+		</>
+	) : (
+		<>
+			<div className='Loged'>
+				<div className='mainLoged'>
+					<div className='logedImg'>
+						<div className='spinner-border' role='status'>
+							<AiOutlineLoading className='spinner' />
+						</div>
+					</div>
+				</div>
 			</div>
 		</>
 	)

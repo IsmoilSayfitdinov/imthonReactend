@@ -1,0 +1,116 @@
+audio{
+    display: none;
+}
+
+.mainMusic {
+   position: fixed;
+    bottom:0;
+    width: 100%;
+    margin-top: 100%;
+}
+
+
+
+.Music{
+  background: #181818;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 112px;
+  padding-left: 30px;
+  padding-right: 30px;
+  position: relative;
+}
+
+.imgMusic{
+  width: 100%;
+   img{
+    position: absolute;
+    top: -310px;
+    left: 0;
+    width: 19.7%;
+   }
+  .textImg{
+    width: 20%;
+     p{
+      font-size: 19px;
+      color: #ffffff;
+      font-family: 'Roboto', sans-serif;
+     }
+     span{
+      font-size: 15px;
+      color: gray;
+      font-family: 'Roboto', sans-serif;
+     }
+  }
+}
+
+.audo{
+  display: block;
+  align-items: center;
+  border: none;
+  margin-top: 20px;
+  margin-left: -750px;
+  .button{
+    color: #181818;
+    font-size: 40px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    height: 40px;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+}
+
+
+  .button:hover{ 
+    background-color: #65d36e;
+    transition: 0.5s;
+  }
+
+
+.range{
+  margin-top: 5px;
+  margin-left: -10px;
+  min-width: 310px;
+  width: 100%;
+    input{
+      margin-left: -120px;
+      width: 100%;
+      accent-color: white;
+      outline: none;
+    }
+}
+
+
+.volume{
+  margin-top: 40px;
+  display: flex;
+  margin-left: 190px;
+  align-items: center;
+   .icons{
+    color: #ffffff;
+    margin-right: 10px;
+    font-size: 22px;
+   }
+  input{
+    accent-color: #65d36e;
+    outline: none;
+  }
+}
+
+
+.hiddenMani{
+  background-color: #181818;
+  position: absolute;
+  top: -30px;
+  padding: 5px;
+  right: 20px;
+}
+
+.hidden{
+  color: #ffff;
+  font-size: 23px;
+  cursor: pointer;
+}

@@ -4,6 +4,7 @@ import Liked from './routes/liked/Liked'
 import Home from './page/home/Home'
 import { useEffect } from 'react'
 import ProductsVies from './routes/product/ProductsVies'
+import Trackmusic from './routes/tarckMusic/Trackmusic'
 
 
 function App() {
@@ -41,6 +42,7 @@ function App() {
 					<Route path='/liked' element={<Liked />} />
 					<Route path='/products' element={<ProductsVies />} />
 				</Routes>
+				<Trackmusic/>
 			</div>
 		</>
 	)

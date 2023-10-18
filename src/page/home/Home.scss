@@ -3,7 +3,7 @@
 	display: flex;
 	width: 100%;
 	max-height: 3986px;
-    height: 100%;
+	height: 100%;
 	background: linear-gradient(180deg, #3333a3 5.09%, #121212 19.4%);
 }
 
@@ -13,6 +13,26 @@
 	display: flex;
 	max-height: 3986px;
 	height: 100%;
+}
+
+.Nexts {
+	display: flex;
+	align-items: center;
+	margin-top: 20px;
+	.divsNex {
+		margin-left: 20px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 40px;
+		height: 40px;
+		flex-shrink: 0;
+		background-color: #0000007f;
+		border-radius: 50px;
+		 color: #fff;
+		 font-size: 28px;
+		 font-family: 'Roboto', sans-serif;
+	}
 }
 
 .Home {
@@ -27,7 +47,7 @@
 	margin-left: 25px;
 	color: #ffd;
 	font-family: 'Roboto', sans-serif;
-	margin-top: 80px;
+	margin-top: 50px;
 }
 
 .HomeProducts {
@@ -36,6 +56,9 @@
 	gap: 20px 0px;
 	width: 100%;
 	margin-top: 50px;
+	a {
+		text-decoration: none;
+	}
 }
 
 .HomeProduct {
@@ -105,7 +128,7 @@
 			font-weight: 700;
 			line-height: normal;
 			letter-spacing: 0.6px;
-            margin-top: 10px;
+			margin-top: 10px;
 		}
 		.description {
 			color: #b3b3b3;
@@ -114,7 +137,7 @@
 			font-style: normal;
 			font-weight: 450;
 			line-height: normal;
-            margin-top: 10px;
+			margin-top: 10px;
 		}
 	}
 }

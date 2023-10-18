@@ -6,6 +6,7 @@
 }
 
 .conatiner{
+  position: relative;
   margin: auto;
   max-width: 1986px;
   width: 100%;

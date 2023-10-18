@@ -1,12 +1,95 @@
 .main__aside {
-    max-width: 346px;
-    min-width: 256px;
-    width: 100%;
-    height: 1986px;
-    height: 100%;
+	max-width: 346px;
+	min-width: 256px;
+	width: 100%;
+	height: 1986px;
+	height: 100%;
 }
 
-.aside{
-    background-color: #000;
-    height: 100%;
+.aside {
+	background-color: #000;
+	height: 100%;
+}
+
+.textAside {
+	p,
+	span {
+		font-family: 'Roboto', sans-serif;
+		color: #ffff;
+		color: #ccc;
+		font-size: 20px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+		letter-spacing: 0.2px;
+	}
+	padding-top: 29px;
+	padding-left: 20px;
+	padding-right: 10px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.textaside {
+	margin-top: 39px;
+	padding-left: 20px;
+	padding-right: 20px;
+	p {
+		color: #ccc;
+		font-family: Circular Std;
+		font-size: 18px;
+		font-style: normal;
+		font-weight: 450;
+		line-height: 24px; /* 133.333% */
+	}
+}
+
+.UsersBlock {
+	.user {
+		width: 62px;
+		height: 62px;
+		flex-shrink: 0;
+		background-color: #ccc;
+		border-radius: 50px;
+		margin-top: 20px;
+		margin-left: 20px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 29px;
+	}
+}
+
+.textAsideU {
+	margin-top: 21px;
+	margin-left: 20px;
+	margin-right: 20px;
+	p {
+		color: #ccc;
+		font-family: Circular Std;
+		font-size: 18px;
+		font-style: normal;
+		font-weight: 450;
+		line-height: 25px; /* 138.889% */
+	}
+}
+
+.btn {
+	max-width: 233px;
+     margin: 26px;
+	button {
+		width: 100%;
+		height: 62px;
+		flex-shrink: 0;
+		border-radius: 40px;
+		background: #fff;
+		color: #171717;
+		text-align: center;
+		font-family: 'Roboto', sans-serif;
+		font-size: 18px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+		letter-spacing: 2.52px;
+	}
 }
